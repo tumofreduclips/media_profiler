@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style/profile.css">
+    <link rel="stylesheet" type="text/css" href="style/avatar_upload_dm.css">
+   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script> -->
+</head>
+<body>
+<div id="main_container">
+
+<!-- NOT DONE -->
+<div class="user-header-wrapper">
+    <div class="user-header-inner">
+        <div class="uh-left">
+            <div class="uh-image">
+                <img class="uh-image-inner" src="" alt="" id="prof_pic">
+            </div>
+        </div>
+        <div class="uh-right">
+            <div class="user-info">
+                <h3 id="u_name">Username</h3>
+                <button id="edit_btn" class="btn">Edit Profile</button>
+            </div>
+            <div class=user-links>
+                <a><span>Nice</span> Posts</a>
+                <a><span>Best</span> Followers</a>
+                <a>Following <span>Dreams</span></a>
+            </div>
+            <div class="user-bio">
+                <p>This is the user biography</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="user-page-wrapper">
+    <div class="user-page-inner">
+        <div id="imgblock1" class="image-block">
+            <div class="block">
+                <img class="image" src="https://images.unsplash.com/photo-1559056986-f834be7896e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80" alt="">
+            </div>
+            <div id="imgblockbc1" class="block-background"></div>
+        </div>
+        <div id="img1" class="image-wrapper">
+            <div id="iov1" class="img-overlay-wrapper">
+                <div class="img-btns">
+                    <p>10 &hearts; &nbsp&nbsp 1 &#128491;</p>
+                </div>
+                <div class="img-overlay"></div>
+            </div>
+            <img class="image" src="https://images.unsplash.com/photo-1559056986-f834be7896e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80" alt="">
+        </div>
+
+    </div>
+</div>
+<div class="user-loader">
+    <div class="loader">
+        <button id="add_post" class="btn">Add Post</button>
+    </div>
+</div>
+
+</div>
+
+
+<div id ="UploadAvatar">
+    <h1 id="UpText">Upload your avatar</h1>
+    <div class="wrapper">
+        <button class="no-image" id="img-result">Upload Image</button>
+    </div>
+    <button id="accept_btn" >Continue</button>
+    <div id="loading_pulse" class="loading-pulse"></div>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="src/config.js"></script>
+<script src="plugins/axios.js"></script>
+<script src="plugins/sha256.js"></script>
+<script type="text/javascript" src="src/upload_avatar.js"></script>
+<script type="text/javascript" src="src/navigator.js"></script>
+<script type="text/javascript" src="src/storage.js"></script>
+<script type="text/javascript" src="src/profile_ui.js"></script>
+<script type="text/javascript" src="src/profile_logic.js"></script>
+</html>

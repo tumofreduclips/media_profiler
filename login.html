@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Profiler
+    </title>
+    <link rel="stylesheet" type="text/css" href="style/login.css">
+</head>
+<body>
+<div class="wrapper" id="wr">
+
+    <h1>PROFILER</h1>
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="container">
+
+
+    <form id="form">
+        <input type="text" placeholder="Username" id="login_uname">
+        <input type="password" placeholder="Password" id="login_pswd">
+        <button type="submit" id="login-button">Login</button>
+        <p id="Err_text_login"></p>
+        <p id="DH_Param">Don't have account? <a id = "reg" href="#" >Register</a></p>
+    </form>
+
+    <form id="form_reg">
+        <input type="text" placeholder="Username" id="reg_uname">
+        <input type="password" placeholder="Password" id="reg_pswd1">
+        <input type="password" placeholder="Repeat Password" id="reg_pswd2">
+        <button type="submit" id="register_btn">Register</button>
+        <p id="Err_text_reg"></p>
+        <p id="HI_Param">Already have account? <a id="sign" href="#" >Sign In</a></p>
+    </form>
+
+    <div class="simple-spinner" id="load">
+        <span></span>
+    </div>
+
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="src/storage.js"></script>
+<script src="src/config.js"></script>
+<script src="plugins/axios.js"></script>
+<script src="plugins/sha256.js"></script>
+<script type="text/javascript" src="src/navigator.js"></script>
+<script src="src/login_logic.js"></script>
+<script src="src/login_ui.js"></script>
+<script src="src/register_logic.js"></script>
+</html>
